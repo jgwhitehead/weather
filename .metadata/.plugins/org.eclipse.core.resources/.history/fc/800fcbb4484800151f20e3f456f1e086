@@ -1,0 +1,17 @@
+'''
+Created on 21 Aug 2015
+
+@author: James
+'''
+from filereader.DelimitedReader import DelimitedReader
+
+class MyClass(object):
+    '''
+    classdocs
+    '''
+
+
+    def __init__(selfparams):
+        hat = DelimitedReader()
+        hat.test(hat.say)
+        

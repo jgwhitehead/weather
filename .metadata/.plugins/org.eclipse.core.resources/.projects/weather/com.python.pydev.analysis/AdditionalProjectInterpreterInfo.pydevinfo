@@ -1,0 +1,41 @@
+-- VERSION_3
+-- START DISKCACHE
+Y:\Users\James\New folder\.metadata\.plugins\org.eclipse.core.resources\.projects\weather\com.python.pydev.analysis\v1_indexcache
+.v1_indexcache
+DelimitedReader|0|Y:\Users\James\New folder\weather\src\DelimitedReader.py
+HottestDay|0|Y:\Users\James\New folder\weather\src\HottestDay.py
+m|0|Y:\Users\James\New folder\weather\src\m.py
+-- END DISKCACHE
+-- START DICTIONARY
+3
+1=DelimitedReader
+2=HottestDay
+3=m
+-- END DICTIONARY
+-- START TREE 1
+3
+del|1|DelimitedReader!9@
+hot|2|HottestDay!17@hottestDay!27@
+yea|1|years!27@
+-- END TREE
+-- START TREE 2
+18
+__i|2|__init__!1&10@__init__!2&18@
+apr|1|aprColIndex!2&19@
+ass|1|assembleYears!2&18@
+aug|1|augColIndex!2&19@
+day|1|dayOfMonthColIndex!2&19@
+dec|1|decColIndex!2&19@
+feb|1|febColIndex!2&19@
+jan|1|janColIndex!2&19@
+jul|1|julColIndex!2&19@
+jun|1|junColIndex!2&19@
+mar|1|marColIndex!2&19@
+may|1|mayColIndex!2&19@
+nov|1|novColIndex!2&19@
+oct|1|octColIndex!2&19@
+rea|1|read!1&10@
+ret|1|retainHottestDays!2&18@
+sep|1|sepColIndex!2&19@
+yea|2|yearColIndex!2&19@years!2&19@
+-- END TREE

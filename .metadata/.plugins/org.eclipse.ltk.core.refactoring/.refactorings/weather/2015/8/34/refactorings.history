@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;weather/resources/weather.tsv.dat&apos; to &apos;weather.tsv&apos;" description="Rename resource &apos;weather.tsv.dat&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="resources/weather.tsv.dat" name="weather.tsv" stamp="1440189006033" updateReferences="true"/>
+</session>

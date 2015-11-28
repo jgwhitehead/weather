@@ -1,0 +1,23 @@
+'''
+Created on 21 Aug 2015
+
+@author: James
+'''
+
+class MyClass(object):
+    '''
+    classdocs
+    '''
+
+
+    def __init__(self,params):
+        '''
+        Constructor
+        '''
+    def readRow(self,row):
+        lastyear = None
+            if row[0]!=lastyear:
+                lastyear = row[0]
+                    print lastyear
+                else:
+                    print "hat"

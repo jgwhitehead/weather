@@ -1,0 +1,10 @@
+'''
+Created on 21 Aug 2015
+
+@author: James
+'''
+from filereader.DelimitedReader import DelimitedReader
+
+if __name__ == '__main__':
+    hat = DelimitedReader()
+    hat.test(hat.say)

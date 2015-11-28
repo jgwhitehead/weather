@@ -1,0 +1,33 @@
+import csv
+
+"""Reads delimeted files"""
+class DelimitedReader:
+
+    
+    def __init__(self):
+        pass
+    
+    def read(self, filename):
+        with open(filename,'rb')as tsvin:
+            tsvin = csv.reader(tsvin,delimiter='\t')
+
+            lastyear = None
+            for row in tsvin:
+                if row[0]!=lastyear:
+                    lastyear = row[0]
+                    print lastyear
+                else:
+                    
+                #===============================================================
+                # func(row)
+                #===============================================================
+                
+    def test(self,func):
+        func()
+        
+    def say(self):
+        print('asdasdas')
+
+        
+
+            

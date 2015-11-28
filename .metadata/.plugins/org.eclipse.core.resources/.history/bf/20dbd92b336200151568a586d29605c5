@@ -1,0 +1,67 @@
+'''
+Created on 21 Aug 2015
+
+@author: James
+'''
+
+class MyClass(object):
+    '''
+    classdocs
+    '''
+    yearColIndex=0;
+    dayOfMonthColIndex=1;
+    janColIndex=2;
+    febColIndex=3;
+    marColIndex=4;
+    aprColIndex=5;
+    mayColIndex=6;
+    juneColIndex=7;
+    julColIndex=8;
+    augColIndex=9;
+    sepColIndex=10;
+    octColIndex=11;
+    novColIndex=12;
+    decColIndex=13;
+
+    years={}
+
+
+    def __init__(self,params):
+        '''
+        Constructor
+        '''
+    def readRow(self,row):
+        lastyear = None
+        if row[0]!=lastyear:
+            lastyear = row[0]
+            print lastyear
+        else:
+            print "hat"
+            
+    def assembleYear(self,reader):
+        lastyear="";
+        row = reader.read;
+        year={};
+        if row[0]!=lastyear:
+            year[lastyear]=year
+            lastyear=row[0];
+            #complete, return
+        year.jan[row[MyClass.dayOfMonthColIndex]] = row[MyClass.janColIndex]
+        year.feb[row[MyClass.dayOfMonthColIndex]] = row[MyClass.febColIndex]
+        year.mar[row[MyClass.dayOfMonthColIndex]] = row[MyClass.marColIndex]
+        year.apr[row[MyClass.dayOfMonthColIndex]] = row[MyClass.aprColIndex]
+        year.may[row[MyClass.dayOfMonthColIndex]] = row[MyClass.mayColIndex]
+        year.jun[row[MyClass.dayOfMonthColIndex]] = row[MyClass.junColIndex]
+        year.jul[row[MyClass.dayOfMonthColIndex]] = row[MyClass.julColIndex]
+        year.aug[row[MyClass.dayOfMonthColIndex]] = row[MyClass.augColIndex]
+        year.sep[row[MyClass.dayOfMonthColIndex]] = row[MyClass.sepColIndex]
+        year.oct[row[MyClass.dayOfMonthColIndex]] = row[MyClass.octColIndex]
+        year.nov[row[MyClass.dayOfMonthColIndex]] = row[MyClass.novColIndex]
+        year.dec[row[MyClass.dayOfMonthColIndex]] = row[MyClass.decColIndex]
+            
+            
+            #read row - save all columns into collection
+            #read next tow - if same year, continue saving
+            #if new year, start new collection and evaluate built up year
+            
+            #outut of script:list day of year which are hottest so far per year 

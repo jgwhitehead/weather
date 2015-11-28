@@ -1,0 +1,12 @@
+'''
+Created on 21 Aug 2015
+
+@author: James
+'''
+from DelimitedReader import DelimitedReader
+
+if __name__ == '__main__':
+    
+    delimitedReader = DelimitedReader()
+    delimitedReader.read("../resources/weather.tsv")
+        

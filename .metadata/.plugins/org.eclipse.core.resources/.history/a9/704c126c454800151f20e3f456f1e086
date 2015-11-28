@@ -1,0 +1,8 @@
+import csv
+
+"""Reads delimeted files"""
+class DelimitedReader:
+    def __init__(self):
+    
+    def read(self, String filename):
+        

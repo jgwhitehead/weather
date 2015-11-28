@@ -1,0 +1,78 @@
+'''
+Created on 21 Aug 2015
+
+@author: James
+'''
+import csv
+class HottestDay(object):
+    '''
+    classdocs
+    '''
+    yearColIndex=0;
+    dayOfMonthColIndex=1;
+    janColIndex=2;
+    febColIndex=3;
+    marColIndex=4;
+    aprColIndex=5;
+    mayColIndex=6;
+    junColIndex=7;
+    julColIndex=8;
+    augColIndex=9;
+    sepColIndex=10;
+    octColIndex=11;
+    novColIndex=12;
+    decColIndex=13;
+
+    years={}
+
+
+    def __init__(self):
+        '''
+        Constructor
+        '''
+    def readRow(self,row):
+        lastyear = None
+        if row[0]!=lastyear:
+            lastyear = row[0]
+            print lastyear
+        else:
+            print "hat"
+            
+    def assembleYear(self,filename):
+        with open(filename,'rb')as tsvin:
+            tsvin = csv.reader(tsvin,delimiter='\t')
+            
+            lastyear="";
+            years={}
+            year={};
+#            lastyear = None
+            first=True
+            for row in tsvin:
+        #for row in....
+        
+                if row[0]!=lastyear:
+                    years[lastyear]=year
+                    if !first:
+                        print lastyear
+                        print year['jan']
+                    lastyear=row[0]
+                    year={}
+                    first=False
+                    
+                year.setdefault("jan",{})[row[HottestDay.dayOfMonthColIndex]] = row[HottestDay.janColIndex]
+                year.setdefault("feb",{})[row[HottestDay.dayOfMonthColIndex]] = row[HottestDay.febColIndex]
+                year.setdefault("mar",{})[row[HottestDay.dayOfMonthColIndex]] = row[HottestDay.marColIndex]
+                year.setdefault("apr",{})[row[HottestDay.dayOfMonthColIndex]] = row[HottestDay.aprColIndex]
+                year.setdefault("may",{})[row[HottestDay.dayOfMonthColIndex]] = row[HottestDay.mayColIndex]
+                year.setdefault("jun",{})[row[HottestDay.dayOfMonthColIndex]] = row[HottestDay.junColIndex]
+                year.setdefault("jul",{})[row[HottestDay.dayOfMonthColIndex]] = row[HottestDay.julColIndex]
+                year.setdefault("aug",{})[row[HottestDay.dayOfMonthColIndex]] = row[HottestDay.augColIndex]
+                year.setdefault("sep",{})[row[HottestDay.dayOfMonthColIndex]] = row[HottestDay.sepColIndex]
+                year.setdefault("oct",{})[row[HottestDay.dayOfMonthColIndex]] = row[HottestDay.octColIndex]
+                year.setdefault("nov",{})[row[HottestDay.dayOfMonthColIndex]] = row[HottestDay.novColIndex]
+                year.setdefault("dec",{})[row[HottestDay.dayOfMonthColIndex]] = row[HottestDay.decColIndex]
+            #read row - save all columns into collection
+            #read next tow - if same year, continue saving
+            #if new year, start new collection and evaluate built up year
+            
+            #outut of script:list day of year which are hottest so far per year 

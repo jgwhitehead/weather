@@ -1,0 +1,11 @@
+import csv
+
+"""Reads delimeted files"""
+class DelimitedReader:
+    def __init__(self):
+    
+    def read(self, String filename):
+        self.String filename = String filename
+        with open(filename,'rb')as tsvin:
+            tsvin = csv.reader(tsvin,delimiter='\t')
+            
